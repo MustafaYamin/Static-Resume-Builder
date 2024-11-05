@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="resume-builder">
+      <div class="input">
+        <div class="main-h">
+            <h2>Static Resume Builder</h2>
+          </div>
+        <form id="r-input">
+          
+          <label class="img-txt" for="image">Upload Image:</label>
+          <input type="file" />
+
+          <div class="r-plac-hldr">
+            <label for="name">Your Name:</label>
+            <input type="text" placeholder="Enter name" />
+
+            <label for="education">Education:</label>
+            <input type="text" placeholder="Education" />
+
+            <label for="skills">Skills:</label>
+            <input type="text" placeholder="Skills" />
+
+            <div id="contact">
+              <h3>Contact:</h3>
+
+              <label for="number">Phone:</label>
+              <input type="number" placeholder="Phone no." />
+
+              <label for="email">Email:</label>
+              <input type="email" placeholder="abc@gmail.com" />
+            </div>
+ 
+
+
+          <button id="gen-rusme">Generate Resume</button>
+          </div>
+        </form>
+      </div>
+      <div class="preview"></div>
+    </div>
+  </body>
+</html>

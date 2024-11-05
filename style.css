@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #DAD2D8;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h2{
+    background: #FCEDD9;
+    margin-bottom: 3rem;
+    margin-left: 1.3rem;
+
+}
+
+label{
+    background: #FCEDD9;
+   font-weight: 600;
+   flex-wrap: inherit;
+
+}
+
+input{
+    background: #FCEDD9;
+    flex-wrap: inherit;
+
+
+}
+
+div{
+    background: #FCEDD9;
+    flex-wrap: inherit;
+
+
+}
+
+h3{
+    background: #FCEDD9;
+    font-weight: 600;
+    flex-wrap: inherit;
+
+}
+
+.resume-builder{
+    border: 2px solid #13B6B9;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 3rem;
+    padding: 3rem;
+    background: #FCEDD9;
+    width: 45%;
+    height: 100%;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.main-h{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+}
+
+#r-input{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #FCEDD9;
+    flex-wrap: inherit;
+
+
+}
+
+
+.img-txt{
+    font-weight: 600;
+    flex-wrap: inherit;
+
+}
+
+.r-plac-hldr{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-wrap: inherit;
+
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-wrap: inherit;
+
+}
+
+input{
+    flex-wrap: inherit;
+    padding: 0.75rem;
+    width: 24rem;
+    border: 0.5px solid black;
+    border-radius: 0.5rem;
+    background: #ffffff;
+}
+
+
+#gen-rusme{
+    padding:0.5rem ;
+    background: #143642;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    border: 0.5px solid black;
+    width: 16rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+    flex-wrap: inherit;
+
+}
+
