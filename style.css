@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
@@ -139,7 +139,7 @@ input{
 
 
 
-.resume-preview-content.editable input {
+/* .resume-preview-content.editable input {
     padding: 0.75rem;
     width: 24rem;
     margin-bottom: 0.5rem;
@@ -160,7 +160,7 @@ input{
   
   .resume-preview-content.editable button:hover {
     background-color: #0c2f35;
-  }
+  } */
 
   
   
@@ -168,7 +168,7 @@ input{
 
   /* download pdf */
 
-  #download-pdf{
+  /* #download-pdf{
     width: 230px;
     height: 55px;
     padding: 20px;
@@ -192,4 +192,263 @@ input{
     padding: 20px;
     color: white;
     background-color: #13B6B9;
-  }
+  } */ 
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DAD2D8;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+h2 {
+    background: #FCEDD9;
+    margin-bottom: 3rem;
+    margin-left: 1.3rem;
+    text-align: center;
+}
+
+label {
+    background: #FCEDD9;
+    font-weight: 600;
+}
+
+input {
+    background: #FCEDD9;
+}
+
+div {
+    background: #FCEDD9;
+}
+
+h3 {
+    background: #FCEDD9;
+    font-weight: 600;
+}
+
+.resume-builder {
+    border: 2px solid #13B6B9;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 3rem;
+    padding: 3rem;
+    background: #FCEDD9;
+    width: 90%;
+    height: 100%;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.main-h {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#r-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #FCEDD9;
+    flex-wrap: inherit;
+    width: 100%;
+}
+
+.img-txt {
+    font-weight: 600;
+}
+
+.r-plac-hldr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-wrap: inherit;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 0.75rem;
+    width: 24rem;
+    border: 0.5px solid black;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+#gen-rusme {
+    padding: 0.5rem;
+    background: #143642;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    border: 0.5px solid black;
+    width: 16rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#download-pdf,
+#edit-resume,
+#share-resume {
+    width: 230px;
+    height: 55px;
+    padding: 20px;
+    color: white;
+    background-color: #13B6B9;
+    margin: 10px 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.resume-preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-preview-content img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.resume-preview-content p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Editable Fields in Preview Mode */
+.resume-preview-content.editable input {
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+}
+
+.resume-preview-content.editable button {
+    background-color: #143642;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.resume-preview-content.editable button:hover {
+    background-color: #0c2f35;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .resume-builder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-preview-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    #gen-rusme, #download-pdf, #edit-resume, #share-resume {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .resume-builder {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-builder {
+        padding: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+        max-width: 90%;
+    }
+
+    .resume-builder {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #gen-rusme,
+    #download-pdf,
+    #edit-resume,
+    #share-resume {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    .resume-preview-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-builder {
+        padding: 1rem;
+    }
+
+    .resume-preview-content {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    #gen-rusme,
+    #download-pdf,
+    #edit-resume,
+    #share-resume {
+        width: 100%;
+        max-width: none;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
