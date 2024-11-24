@@ -3,47 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Static Resume Builder</title>
+    <title>Interactive Resume Builder</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- jsPDF CDN -->
   </head>
   <body>
-    <div class="resume-builder">
-      <div class="input">
+    <div class="resume-builder" id="resume-builder">
+      <!-- Form Section (Hidden after generating resume or when shared) -->
+      <div class="input" id="resume-input">
         <div class="main-h">
-            <h2>Static Resume Builder</h2>
-          </div>
+          <h2>Interactive Resume Builder</h2>
+        </div>
         <form id="r-input">
-          
           <label class="img-txt" for="image">Upload Image:</label>
-          <input type="file" />
+          <input type="file" id="image-input" accept="image/*" />
 
           <div class="r-plac-hldr">
             <label for="name">Your Name:</label>
-            <input type="text" placeholder="Enter name" />
+            <input type="text" id="name" placeholder="Enter name" />
 
             <label for="education">Education:</label>
-            <input type="text" placeholder="Education" />
+            <input type="text" id="education" placeholder="Education" />
 
             <label for="skills">Skills:</label>
-            <input type="text" placeholder="Skills" />
+            <input type="text" id="skills" placeholder="Skills" />
 
             <div id="contact">
               <h3>Contact:</h3>
-
               <label for="number">Phone:</label>
-              <input type="number" placeholder="Phone no." />
+              <input type="text" id="phone" placeholder="Phone no." />
 
               <label for="email">Email:</label>
-              <input type="email" placeholder="abc@gmail.com" />
+              <input type="email" id="email" placeholder="abc@gmail.com" />
             </div>
- 
 
-
-          <button id="gen-rusme">Generate Resume</button>
+            <button type="button" id="gen-rusme">Generate Resume</button>
           </div>
         </form>
       </div>
-      <div class="preview"></div>
+
+      <!-- Resume Preview Section (Visible after generation or when shared) -->
+      <div class="preview" id="resume-preview">
+        <!-- Generated resume will be inserted here -->
+      </div>
+
+      <button id="download-pdf" style="display: none">
+        Download Resume as PDF
+      </button>
+      <!-- PDF download button -->
+      <button id="edit-resume" style="display: none">Edit Resume</button>
+      <!-- Edit button -->
+      <!-- <button id="share-resume" style="display: none">Share Resume</button> -->
+      <!-- Share button -->
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -8,6 +8,8 @@
 body{
     display: flex;
     justify-content: center;
+    gap: 20px;
+    
 }
 
 
@@ -51,11 +53,11 @@ h3{
     border: 2px solid #13B6B9;
     display: flex;
     justify-content: center;
-    
+    gap: 50px;
     margin-top: 3rem;
     padding: 3rem;
     background: #FCEDD9;
-    width: 45%;
+    width: 90%;
     height: 100%;
     border-radius: 2rem;
     margin-bottom: 3rem;
@@ -128,3 +130,66 @@ input{
 
 }
 
+
+
+
+
+
+/* Editable Fields in Preview Mode */
+
+
+
+.resume-preview-content.editable input {
+    padding: 0.75rem;
+    width: 24rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+  }
+  
+  .resume-preview-content.editable button {
+    background-color: #143642;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .resume-preview-content.editable button:hover {
+    background-color: #0c2f35;
+  }
+
+  
+  
+
+
+  /* download pdf */
+
+  #download-pdf{
+    width: 230px;
+    height: 55px;
+    padding: 20px;
+    color: white;
+    background-color: #13B6B9;
+
+  }
+
+
+  #edit-resume{
+    width: 200px;
+    height: 55px;
+    padding: 20px;
+    color: white;
+    background-color: #13B6B9;
+  }
+
+  #share-resume{
+    width: 200px;
+    height: 55px;
+    padding: 20px;
+    color: white;
+    background-color: #13B6B9;
+  }
